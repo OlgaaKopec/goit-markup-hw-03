@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>hw3-main page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,148 +19,158 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo-main-style" href="#"
-          ><span class="logo">Web</span><span class="logo-part-2">Studio</span></a
-        >
-        <ul class="nav-links">
-          <li><a class="active" href="#">Agencja</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a class="contact" href="info@devstudio.com">info@devstudio.com</a>
-      <a class="contact" href="tel:48111111111">+48 111 111 111</a>
-    </header>
-    <main>
-      <section>
-        <div class="main-header">
-          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button-header" type="button">Zamów usługe</button>
+    <div class="container">
+      <header class="menu">
+        <div>
+          <a class="logo-main-style" href="#"
+            ><span class="logo">Web</span><span class="logo-part-2">Studio</span></a
+          >
         </div>
-      </section>
-      <section>
-        <table>
-          <thead class="tb-headers">
-            <tr>
-              <th>LOREM IPSUM</th>
-              <th>LOREM IPSUM</th>
-              <th>LOREM IPSUM</th>
-              <th>LOREM IPSUM</th>
-            </tr>
-          </thead>
-          <tbody class="td-content">
-            <tr>
-              <td>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </td>
-              <td>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </td>
-              <td>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </td>
-              <td>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <div class="headers">
-        <section>
-          <h2>Czym się zajmujemy</h2>
-          <ul>
-            <li>
-              <img src="images/computer1.jpg" alt="komputer" height="294" width="370" />
-            </li>
-            <li>
-              <img src="images/laptop2.jpg" alt="laptop" height="294" width="370" />
-            </li>
-            <li>
-              <img src="images/tablet3.jpg" alt="kolorowy tablet" height="294" width="370" />
-            </li>
+        <div>
+          <ul class="nav-links">
+            <li><a class="active" href="#">Agencja</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
           </ul>
+        </div>
+        <div class="header-space-needed">
+          <a class="contact" href="info@devstudio.com">info@devstudio.com</a>
+          <a class="contact" href="tel:48111111111">+48 111 111 111</a>
+        </div>
+      </header>
+      <main>
+        <section class="section">
+            <section class="title-box">
+              <div class="main-header">
+                <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+                <button class="button-header" type="button">Zamów usługe</button>
+            </section>
+            <div class="lorem-ipsum">
+              <ul class="td-headers">
+                <li>LOREM IPSUM</li>
+                <li>LOREM IPSUM</li>
+                <li>LOREM IPSUM</li>
+                <li>LOREM IPSUM</li>
+              </ul>
+              <ul class="tb-content">
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="headers">
+            <section class="team-what-we-do">
+              <div>
+                <h2>Czym się zajmujemy</h2>
+                <ul class="images-what-we-do">
+                  <li>
+                    <img src="images/computer1.jpg" alt="komputer" height="294" width="370" />
+                  </li>
+                  <li>
+                    <img src="images/laptop2.jpg" alt="laptop" height="294" width="370" />
+                  </li>
+                  <li>
+                    <img src="images/tablet3.jpg" alt="kolorowy tablet" height="294" width="370" />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="our-team-presentation">
+            <h2>Nasz zespół</h2>
+            <ul class="team-members">
+              <li>
+                <figure>
+                  <img
+                    src="images/john-doe-1.jpg"
+                    alt="uśmiechnięty pan w okularach"
+                    height="260"
+                    width="270"
+                  />
+                  <figcaption>
+                    <div class="main-team-member">John Doe</div>
+                    <div class="main-team-position">Product Designer</div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="images/john-doe-2.jpg"
+                    alt="uśmiechnięta blondynka"
+                    height="260"
+                    width="270"
+                  />
+                  <figcaption>
+                    <div class="main-team-member">John Doe</div>
+                    <div class="main-team-position">Frontend Developer</div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="images/john-doe-3.jpg"
+                    alt="uśmiechnięty pan patrzący w swoje lewo"
+                    height="260"
+                    width="270"
+                  />
+                  <figcaption>
+                    <div class="main-team-member">John Doe</div>
+                    <div class="main-team-position">Marketing</div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="images/john-doe-4.jpg"
+                    alt="pan z brodą na dworze"
+                    height="260"
+                    width="270"
+                  />
+                  <figcaption>
+                    <div class="main-team-member">John Doe</div>
+                    <div class="main-team-position">UI Designer</div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section>
-          <h2>Nasz zespół</h2>
-          <ul>
-            <li>
-              <figure>
-                <img
-                  src="images/john-doe-1.jpg"
-                  alt="uśmiechnięty pan w okularach"
-                  height="260"
-                  width="270"
-                />
-                <figcaption>
-                  <span class="main-team-member">John Doe</span>
-                  <span class="main-team-position">Product Designer</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img
-                  src="images/john-doe-2.jpg"
-                  alt="uśmiechnięta blondynka"
-                  height="260"
-                  width="270"
-                />
-                <figcaption>
-                  <span class="main-team-member">John Doe</span>
-                  <span class="main-team-position">Frontend Developer</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img
-                  src="images/john-doe-3.jpg"
-                  alt="uśmiechnięty pan patrzący w swoje lewo"
-                  height="260"
-                  width="270"
-                />
-                <figcaption>
-                  <span class="main-team-member">John Doe</span>
-                  <span class="main-team-position">Marketing</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img
-                  src="images/john-doe-4.jpg"
-                  alt="pan z brodą na dworze"
-                  height="260"
-                  width="270"
-                />
-                <figcaption>
-                  <span class="main-team-member">John Doe</span>
-                  <span class="main-team-position">UI Designer</span>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </main>
-    <footer class="footer-main-style">
-      <a class="logo-main-style" href="#"
-        ><span class="logo">Web</span><span class="logo-second-part-footer">Studio</span></a
-      >
-      <address>
-        <ul>
-          <li class="non-italic-address">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a class="footer-contact" href="info@example.com">info@example.com</a></li>
-          <li><a class="footer-contact" href="tel:48111111111">+48 111 111 111</a></li>
-        </ul>
-      </address>
-    </footer>
+      </main>
+      <section class="section">
+        <footer>
+          <div class="container-footer-main">
+            <div class="footer-padding-top">
+              <a class="logo-main-style" href="#"
+                ><span class="logo">Web</span><span class="logo-second-part-footer">Studio</span></a
+              >
+              <address>
+                <ul class="footer-model">
+                  <li class="non-italic-address">m. Warszawa, Aleje Jerozolimskie 21</li>
+                  <li><a class="footer-contact" href="info@example.com">info@example.com</a></li>
+                  <li><a class="footer-contact" href="tel:48111111111">+48 111 111 111</a></li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
   </body>
 </html>

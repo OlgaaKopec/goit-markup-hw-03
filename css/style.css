@@ -4,6 +4,8 @@
   --logo-white: #ffffff;
   --contact-grey: #757575;
   --backgroud-footer: #2f303a;
+  --header-border: #ececec;
+  --team-members-backgroud: #f5f4fa;
 }
 
 body {
@@ -13,6 +15,41 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
+
+h1,
+h2,
+p,
+ul,
+figure {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.menu {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 24px;
+  border-bottom: solid 1px var(--header-border);
+}
+
+.portfolio-content-all {
+  padding-top: 70px;
+}
+
 .logo-main-style {
   text-decoration: none;
   font-family: 'Raleway';
@@ -20,6 +57,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  margin-left: 215px;
+  margin-top: 30px;
 }
 .logo {
   color: var(--main-blue);
@@ -35,6 +74,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--almost-black);
   text-decoration: none;
+  padding: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
 }
 
 .active {
@@ -44,13 +89,80 @@ body {
   color: var(--main-blue);
 }
 
+.header-space-needed a {
+  padding: 20px;
+}
+
+.header-space-needed {
+  padding-right: 227px;
+}
+
+.portfolio-big-net {
+  width: 1170px;
+  top: 174px;
+  row-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: 215px;
+}
+
+.portfolio-big-net figcaption {
+  width: 322px;
+  height: 70px;
+  left: 639px;
+  top: 576px;
+  padding-top: 10px;
+  padding-left: 25px;
+  letter-spacing: 0.03em;
+}
+
+.buttons {
+  width: 1600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 121px;
+  list-style: none;
+  margin-left: 510px;
+  padding-bottom: 56px;
+}
+
+.buttons li {
+  padding: 8px;
+}
+
 .buttons button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  width: 120px;
+  height: 38px;
   background-color: none;
   cursor: pointer;
   border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio-big-net figure {
+  width: 370px;
+  height: 404px;
+  left: 615px;
+  top: 262px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.title-box {
+  width: 1600px;
+  height: 600px;
+  background-color: var(--backgroud-footer);
+  display: flex;
+  justify-items: center;
+  margin-top: 9px;
 }
 
 .contact {
@@ -68,14 +180,17 @@ body {
 }
 
 .main-header {
-  background-color: var(--backgroud-footer);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   color: var(--logo-white);
+  padding: 200px 452px;
+  text-align: center;
 }
 
 .button-header {
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -83,12 +198,122 @@ body {
   background-color: var(--main-blue);
   border: none;
   cursor: pointer;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.lorem-ipsum {
+  width: 1170px;
+  height: 101px;
+  margin-left: 215px;
+  margin-top: 94px;
+}
+
+.td-headers {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.td-headers li {
+  display: flex;
+  flex-basis: calc(100% / 4);
+}
+
+.tb-content {
+  display: flex;
+  flex-basis: calc(100% / 3);
+}
+
+.tb-content li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--contact-grey);
+  display: flex;
+  list-style: none;
+}
+
+.team-what-we-do {
+  margin-left: 215px;
+  width: 1170px;
+  min-height: auto;
+  text-align: center;
+  top: 969px;
+}
+
+.headers {
+  padding: -94px;
 }
 
 .headers h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.images-what-we-do {
+  width: 1170px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.our-team-presentation {
+  top: 1149px;
+  width: 1600px;
+  height: 648px;
+  background-color: var(--team-members-backgroud);
+}
+
+.our-team-presentation h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 94px;
+}
+
+.team-members {
+  margin-left: 250px;
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  flex-basis: calc(100% / 4);
+}
+
+.team-members figcaption div:first-child {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.team-members figcaption div {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.team-members li {
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+  background: var(--logo-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .img-first-part {
@@ -104,11 +329,52 @@ body {
   color: var(--contact-grey);
 }
 
-.footer-main-style {
+.container-footer-main {
   background-color: var(--backgroud-footer);
   color: var(--logo-white);
   font-size: 14px;
   line-height: 1.7;
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2204px;
+  letter-spacing: 0.03em;
+}
+
+.container-footer-portfolio {
+  background-color: var(--backgroud-footer);
+  color: var(--logo-white);
+  font-size: 14px;
+  line-height: 1.7;
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  letter-spacing: 0.03em;
+}
+
+.footer-padding-top {
+  margin-top: 60px;
+}
+
+.footer-model li {
+  list-style: none;
+  margin-left: 215px;
+  padding-bottom: 8px;
+}
+.footer-model :nth-child(1) {
+  padding-top: 20px;
+}
+
+.footer-style li {
+  list-style: none;
+  margin-left: 215px;
+  padding-bottom: 8px;
+}
+
+.footer-style :nth-child(1) {
+  padding-top: 20px;
 }
 
 .logo-second-part-footer {
@@ -130,18 +396,6 @@ body {
 .footer-contact:focus {
   color: var(--main-blue);
   outline: none;
-}
-
-.tb-headers th {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-}
-
-.td-content td {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--contact-grey);
 }
 
 .main-team-member {
