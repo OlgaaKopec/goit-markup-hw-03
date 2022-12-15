@@ -6,6 +6,7 @@
   --backgroud-footer: #2f303a;
   --header-border: #ececec;
   --team-members-backgroud: #f5f4fa;
+  --border-header: #eeeeee;
 }
 
 body {
@@ -27,8 +28,9 @@ figure {
 }
 
 .container {
-  max-width: 1200px;
-  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -36,18 +38,11 @@ figure {
 }
 
 .menu {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
-  margin-top: 24px;
   border-bottom: solid 1px var(--header-border);
-}
-
-.portfolio-content-all {
-  padding-top: 70px;
+  gap: 100px;
+  padding: 24px 0 25px;
 }
 
 .logo-main-style {
@@ -58,13 +53,18 @@ figure {
   font-size: 26px;
   line-height: 1.2;
   margin-left: 215px;
-  margin-top: 30px;
 }
+
 .logo {
   color: var(--main-blue);
 }
 .logo-part-2 {
   color: var(--almost-black);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
 }
 
 .nav-links a {
@@ -77,11 +77,6 @@ figure {
   padding: 20px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
 .active {
   font-weight: 500;
   font-size: 14px;
@@ -90,47 +85,28 @@ figure {
 }
 
 .header-space-needed a {
-  padding: 20px;
-}
-
-.header-space-needed {
-  padding-right: 227px;
+  padding: 10px;
 }
 
 .portfolio-big-net {
-  width: 1170px;
-  top: 174px;
   row-gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin-left: 215px;
 }
 
 .portfolio-big-net figcaption {
-  width: 322px;
-  height: 70px;
-  left: 639px;
-  top: 576px;
   padding-top: 10px;
   padding-left: 25px;
   letter-spacing: 0.03em;
 }
 
 .buttons {
-  width: 1600px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 121px;
+  justify-content: center;
   list-style: none;
-  margin-left: 510px;
-  padding-bottom: 56px;
-}
-
-.buttons li {
-  padding: 8px;
+  gap: 15px;
 }
 
 .buttons button {
@@ -148,21 +124,14 @@ figure {
 }
 
 .portfolio-big-net figure {
-  width: 370px;
-  height: 404px;
-  left: 615px;
-  top: 262px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  background: var(--logo-white);
+  border: 1px solid var(--border-header);
 }
 
 .title-box {
-  width: 1600px;
-  height: 600px;
   background-color: var(--backgroud-footer);
   display: flex;
-  justify-items: center;
-  margin-top: 9px;
+  margin-top: -94px;
 }
 
 .contact {
@@ -184,8 +153,10 @@ figure {
   font-size: 44px;
   line-height: 1.4;
   color: var(--logo-white);
-  padding: 200px 452px;
   text-align: center;
+  margin-top: 106px;
+  margin-left: 252px;
+  margin-right: 252px;
 }
 
 .button-header {
@@ -199,16 +170,15 @@ figure {
   border: none;
   cursor: pointer;
   margin-top: 30px;
+  margin-bottom: 106px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .lorem-ipsum {
-  width: 1170px;
-  height: 101px;
-  margin-left: 215px;
-  margin-top: 94px;
+  margin-top: -94px;
+  margin-bottom: -94px;
 }
 
 .td-headers {
@@ -218,37 +188,33 @@ figure {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-between;
 }
 
 .td-headers li {
-  display: flex;
   flex-basis: calc(100% / 4);
 }
 
 .tb-content {
   display: flex;
-  flex-basis: calc(100% / 3);
 }
 
 .tb-content li {
   font-size: 14px;
   line-height: 1.7;
   color: var(--contact-grey);
-  display: flex;
   list-style: none;
 }
 
 .team-what-we-do {
   margin-left: 215px;
-  width: 1170px;
-  min-height: auto;
   text-align: center;
-  top: 969px;
 }
 
-.headers {
-  padding: -94px;
+.main-team-members-layout {
+  background-color: var(--team-members-backgroud);
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .headers h2 {
@@ -256,48 +222,23 @@ figure {
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 50px;
+  text-align: center;
 }
 
+.no-space-between-padding {
+  margin-top: -94px;
+}
 .images-what-we-do {
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 969px;
   display: flex;
-  flex-direction: row;
   list-style: none;
   justify-content: space-between;
-}
-
-.our-team-presentation {
-  top: 1149px;
-  width: 1600px;
-  height: 648px;
-  background-color: var(--team-members-backgroud);
-}
-
-.our-team-presentation h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  margin-bottom: 50px;
-  text-align: center;
-  padding-top: 94px;
 }
 
 .team-members {
-  margin-left: 250px;
-  width: 1170px;
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
-  flex-basis: calc(100% / 4);
-}
-
-.team-members figcaption div:first-child {
-  padding-top: 20px;
-  text-align: center;
 }
 
 .team-members figcaption div {
@@ -306,10 +247,6 @@ figure {
 }
 
 .team-members li {
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
   background: var(--logo-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -327,6 +264,7 @@ figure {
   font-size: 16px;
   line-height: 1.9;
   color: var(--contact-grey);
+  margin-bottom: 20px;
 }
 
 .container-footer-main {
@@ -334,12 +272,8 @@ figure {
   color: var(--logo-white);
   font-size: 14px;
   line-height: 1.7;
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2204px;
   letter-spacing: 0.03em;
+  margin-top: -94px;
 }
 
 .container-footer-portfolio {
@@ -347,15 +281,7 @@ figure {
   color: var(--logo-white);
   font-size: 14px;
   line-height: 1.7;
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
   letter-spacing: 0.03em;
-}
-
-.footer-padding-top {
-  margin-top: 60px;
 }
 
 .footer-model li {
@@ -408,6 +334,7 @@ figure {
   font-size: 16px;
   line-height: 1.2;
   color: var(--contact-grey);
+  margin-bottom: 30px;
 }
 
 .non-italic-address {
@@ -426,4 +353,8 @@ figure {
   background-color: var(--main-blue);
   color: var(--logo-white);
   outline: none;
+}
+.footer-padding-top {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
