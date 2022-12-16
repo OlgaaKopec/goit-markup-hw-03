@@ -260,17 +260,17 @@ body {
 
 .footer-wrapper .container {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 51px;
 }
 
 .footer-wrapper .container ul li {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   line-height: 1.7;
   font-style: normal;
 }
 
 .footer-wrapper .container ul :nth-child(1) {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .logo-second-part-footer {
